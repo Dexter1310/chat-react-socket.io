@@ -4,7 +4,7 @@
 2. npm i express socket.io morgan mongoose cors body-parser
 3. npm i nodemon -D
 4. npx kill-port 3000 (close port server)
-5. npn run dev (run server)
+5. npm run dev (run server)
 
 
 # Client front
