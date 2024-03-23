@@ -9,4 +9,5 @@
 2. npm i axios
 3. npm i socket.io-client
 
+4. npm install mongoose@6.10.0
 
