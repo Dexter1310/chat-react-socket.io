@@ -70,7 +70,7 @@ function App() {
 
         //Enviamos el mensaje sólo si se ha establecido un nickname
         if (nickname !== '') {
-            //console.log(message)
+
             //Enviamos el mensaje al servidor
             socket.emit('message', message, nickname)
 
@@ -100,13 +100,10 @@ function App() {
         e.preventDefault()
         setNickname(nickname)
         setDisabled(true)
-
-
         axios.post(url + 'save-nick', {
             user: nickname,
             client: socket.id
         })
-
         socket.emit('nickuser', nickname, () => {
             console.log(socket)
         })
@@ -143,7 +140,6 @@ function App() {
 
     return (
         <div className="App">
-
             <div className="row">
                 <div className="col-2 ">
                     <div className="container mt-3">
@@ -158,7 +154,6 @@ function App() {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div className="col-10">
                     <div className="container mt-3">
@@ -195,7 +190,7 @@ function App() {
                                     <div className="d-flex">
                                         <textarea type="text" className="form-control" placeholder="Mensaje..."
                                                   onChange={e => setMessage(e.target.value)} value={message}/>
-                                        <button className="btn btn-success btn-sm mx-3" type="submit">Enviar</button>
+                                        <button className="btn btn-success btn-sm mx-3" type="submit" disabled={!message.length>0}>Enviar</button>
                                     </div>
                                 </form>
                             </div>
