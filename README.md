@@ -1,7 +1,7 @@
 #  Server init project
 
-1npm init -yes (init project node.js)
-2.    npm i express socket.io morgan mongoose cors body-parser
+1. npm init -yes (init project node.js)
+2. npm i express socket.io morgan mongoose cors body-parser
 3. npm i nodemon -D
 4. npx kill-port 3000 (close port server)
 
