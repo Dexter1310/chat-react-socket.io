@@ -1,10 +1,11 @@
-1. npm init -yes (iniciar projecto node.js)
+# Server init project
+3. npm init -yes (init project node.js)
 2.    npm i express socket.io morgan mongoose cors body-parser
 3. npm i nodemon -D
 4. npx kill-port 3000 (close port server)
 
 
-# Crear projecto react para el client
+# Client front
 
 1. npx create-react-app client
 2. npm i axios
